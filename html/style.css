@@ -1,0 +1,142 @@
+@font-face {
+    font-family: FuenteTest;
+    src: url(https://cdn.discordapp.com/attachments/937063390961074226/943132714901590096/digital-7.ttf);
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-size: .9vw;
+    transition: .5s;
+}
+
+.compass {
+    position: absolute;
+    top: 2%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    max-width: fit-content;
+    height: auto;
+}
+
+.compass h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    text-shadow: 0vw .12vw .12vw rgb(0, 0, 0);
+    text-align: center;
+}
+
+.carhud {
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 12vw;
+    height: 8vw;
+}
+
+.carhud h1 {
+    color: white;
+    font-family: FuenteTest;
+    font-size: 4vw;
+    font-weight: light;
+    text-align: center;
+    margin-top: 0vw;
+}
+
+.cont {
+    position: absolute;
+    width: 7vw;
+    height: .2vw;
+    border-radius: 1vw;
+    top: 5vw;
+    left: 2.3vw;
+}
+
+.progressbarvel {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    background-color: green;
+}
+
+.fuel i {
+    text-shadow: -.05vw 0 rgba(255, 255, 255, 0.315), 0 .05vw  rgba(255, 255, 255, 0.315), .05vw  0 rgba(255, 255, 255, 0.315), 0 -.05vw  rgba(255, 255, 255, 0.315);
+    font-size: 1vw;
+}
+
+.fuel {
+    position: absolute;
+    left: 2.5vw;
+    top: 6vw;
+    width: 40%;
+    height: 20%;    
+}
+
+.fuelcont {
+    position: absolute;
+    width: 100%;
+    height: .8vw;
+    border: .1vw black solid;
+    left: 1.3vw;
+    top: 0vw;
+}
+
+.progressfuel {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes parpadea {
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 1;
+    }
+}
+
+.container img {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    top: 80%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+
+#maxspeed {
+    position: absolute;
+    font-size: 1.2vw;
+    color: white;
+    top: 90.5%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+}
+
+@keyframes changecolor {
+    0% {
+      color: red
+    }
+    25% {
+      color: blue
+    }
+    50% {
+      color: red
+    }
+    75% {
+      color: blue
+    }
+}
